@@ -1,0 +1,42 @@
+---
+title: "Quarto Hands-on Workshop"
+
+author: 
+  - name:
+      given: Miquel
+      family: Perello Nieto
+    orcid: 0000-0001-8925-424X
+    email: miquel.perellonieto@bristol.ac.uk
+    affiliations:
+      - name: University of Bristol
+        city: Bristol
+        country: United Kingdom
+        postal-code: BS8 1QU
+  - name: Daladier Sampaio Neto
+    email: daladier.sampaioneto@bristol.ac.uk
+    affiliations:
+      - name: University of Bristol
+        city: Bristol
+        country: United Kingdom
+        postal-code: BS8 1QU
+  - name: Roussel Desmond Nzoyem
+    email: rd.nzoyemngueguin@bristol.ac.uk
+    affiliations:
+      - name: University of Bristol
+        city: Bristol
+        country: United Kingdom
+        postal-code: BS8 1QU
+  - name: Peter Flach
+    orcid: 0000-0001-6857-5810
+    email: peter.flach@bristol.ac.uk
+    affiliations:
+      - name: University of Bristol
+        city: Bristol
+        country: United Kingdom
+        postal-code: BS8 1QU
+
+---
+
+The Quarto publication system is a versatile and powerful tool designed for creating dynamic documents, presentations, websites, and more. It seamlessly integrates text, code, and outputs, making it an ideal choice for data scientists, researchers, and educators who need to combine narrative with analysis. Quarto supports a wide range of programming languages, including R, Python, and Julia, allowing users to embed live code within their documents. Its flexibility extends to output formats as well, enabling the production of HTML, PDF, Word documents, and more, all from a single source file. By leveraging Markdown and advanced features such as citations and cross-referencing, Quarto facilitates the creation of professional and reproducible documents that cater to diverse audiences and purposes.
+
+Join us for this hands-on introductory tutorial to the Quarto publishing system. You will learn how to use Quarto to set up a personal academic website, advertise your work, build a blogging environment, as well as create slides, pdf's or other online materials. At the end of the session you will have the main structure for your personal website, hosted for free in GitHub and with a simple and automatic deployment workflow using GitHub actions. We will provide use case examples and a step-by-step guide to follow along the session.
