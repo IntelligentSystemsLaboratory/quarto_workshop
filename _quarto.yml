@@ -24,12 +24,16 @@ website:
       - hands_on.qmd
       - about.qmd
 
-
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
 
-
-
+# Additional extensions for Sphinx
+sphinx:
+  config:
+    html_js_files:
+    - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
+  extra_extensions:
+    - sphinxcontrib.mermaid # Draw diagrams with Mermaid
