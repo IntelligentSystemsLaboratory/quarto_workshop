@@ -133,7 +133,7 @@
     "href": "slides.html#programing",
     "title": "Hands-on",
     "section": "Programing",
-    "text": "Programing\n\nQuarto also provides the option to embed some code on your website\nQuarto supports Python, R, Julia and Observable Javascript\nYou can create a code block delimiting using ```\nExample of code running: https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html"
+    "text": "Programing\n\nQuarto also provides the option to embed some code on your website\nQuarto supports Python, R, Julia and Observable Javascript\nYou can create a code block delimiting using ```\nExample of code running: https://tailor-uob.github.io/training-material/cha_odm/odm.html"
   },
   {
     "objectID": "slides.html#programing-1",
@@ -202,7 +202,7 @@
     "href": "hands_on.html#programing",
     "title": "Hands-on",
     "section": "Programing",
-    "text": "Programing\n\nQuarto also provides the option to embed some code on your website\nQuarto supports Python, R, Julia and Observable Javascript\nYou can create a code block delimiting using ```\nExample of code running: https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html",
+    "text": "Programing\n\nQuarto also provides the option to embed some code on your website\nQuarto supports Python, R, Julia and Observable Javascript\nYou can create a code block delimiting using ```\nExample of code running: https://tailor-uob.github.io/training-material/cha_odm/odm.html",
     "crumbs": [
       "Home",
       "Hands-on"
