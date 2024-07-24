@@ -1,0 +1,101 @@
+---
+title: "Quarto Hands-on"
+author: "Daladier Sampaio"
+format:
+    html: default
+    revealjs:
+        theme: simple
+        output-file: slides.html
+        width: 960
+        height: 700
+jupyter: python3
+
+---
+
+## Agenda
+
+- Introduction to Quarto
+- Get Started 
+- Hands-on
+    - Listings
+    - Templates and Customization
+    - Code
+
+
+## Get Started
+
+- Download Quarto
+    - Linux
+    - MacOS
+    - Windows
+
+- Choose your platform
+    - VS Code
+    - Jupyter Notebook/Lab
+    - NeoVim
+    - RStudio
+
+## Get Started
+
+![](images/geting_started.png){.absolute top=75}
+
+## Get Started
+
+- Download Quarto
+
+Download Quarto: [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+
+Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_workshop/](https://intelligentsystemslaboratory.github.io/quarto_workshop/)
+
+## Get Started
+
+- Terminal + VS Code
+
+## Get Started
+
+- Run the command 'quarto create project website <mysite>'
+
+- Automatically Quarto will create the following directory structure:
+    - _quarto.yml
+    - index.qmd
+    - about.qmd
+    - styles.css
+
+## Get Started
+
+- .yml files
+    - YAML is a human-readable data serialization language
+    - YAML is an official strict superset of JSON despite looking very different from JSON.
+    - To create a YAML file, use either the .yaml or .yml file extension.
+
+- .qmd files
+    - Work as markdown files, but they have a configuration section in yml on the top of the file
+
+## Get Started
+
+- _quarto.yml
+    - Defines the basic structure of the website.
+    - All configurations are done using yml
+    - Some of the configurations:
+        - Navigation bar
+        - Side bar
+        - Contents 
+
+## Listings
+
+- Listings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data
+
+- Useful to create blogs, newletters
+
+- Link to the documentation: [https://quarto.org/docs/websites/website-listings.html](https://quarto.org/docs/websites/website-listings.html)
+
+- Listings example: [https://intelligentsystemslaboratory.github.io/personal_page/blog.html](https://intelligentsystemslaboratory.github.io/personal_page/blog.html)
+
+## Templates and Customization
+
+- Search bar
+    - [https://quarto.org/docs/websites/website-search.html](https://quarto.org/docs/websites/website-search.html)
+- Themes
+    - [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
+- Tools
+    - [https://quarto.org/docs/websites/website-tools.html](https://quarto.org/docs/websites/website-tools.html)

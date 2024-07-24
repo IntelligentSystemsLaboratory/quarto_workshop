@@ -20,6 +20,7 @@ website:
       - href: index.qmd
         text: Home
       - introduction.qmd
+      - hands_on.qmd
       - about.qmd
 
 
