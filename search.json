@@ -4,27 +4,201 @@
     "href": "index.html",
     "title": "Quarto Hands-on Workshop",
     "section": "",
-    "text": "The Quarto publication system is a versatile and powerful tool designed for creating dynamic documents, presentations, websites, and more. It seamlessly integrates text, code, and outputs, making it an ideal choice for data scientists, researchers, and educators who need to combine narrative with analysis. Quarto supports a wide range of programming languages, including R, Python, and Julia, allowing users to embed live code within their documents. Its flexibility extends to output formats as well, enabling the production of HTML, PDF, Word documents, and more, all from a single source file. By leveraging Markdown and advanced features such as citations and cross-referencing, Quarto facilitates the creation of professional and reproducible documents that cater to diverse audiences and purposes.\nJoin us for this hands-on introductory tutorial to the Quarto publishing system. You will learn how to use Quarto to set up a personal academic website, advertise your work, build a blogging environment, as well as create slides, pdf’s or other online materials. At the end of the session you will have the main structure for your personal website, hosted for free in GitHub and with a simple and automatic deployment workflow using GitHub actions. We will provide use case examples and a step-by-step guide to follow along the session."
+    "text": "The Quarto publication system is a versatile and powerful tool designed for creating dynamic documents, presentations, websites, and more. It seamlessly integrates text, code, and outputs, making it an ideal choice for data scientists, researchers, and educators who need to combine narrative with analysis. Quarto supports a wide range of programming languages, including R, Python, and Julia, allowing users to embed live code within their documents. Its flexibility extends to output formats as well, enabling the production of HTML, PDF, Word documents, and more, all from a single source file. By leveraging Markdown and advanced features such as citations and cross-referencing, Quarto facilitates the creation of professional and reproducible documents that cater to diverse audiences and purposes.\nJoin us for this hands-on introductory tutorial to the Quarto publishing system. You will learn how to use Quarto to set up a personal academic website, advertise your work, build a blogging environment, as well as create slides, pdf’s or other online materials. At the end of the session you will have the main structure for your personal website, hosted for free in GitHub and with a simple and automatic deployment workflow using GitHub actions. We will provide use case examples and a step-by-step guide to follow along the session.\n\nAgenda\n\nIntroduction to Quarto\nGet Started\nHands-on\n\nListings\nTemplates and Customization\nPrograming",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "introduction/index.html",
+    "href": "introduction/index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "The publishing workflow is the process in which external resources are prepared and collated together with the help of an authoring tool and subsequently rendered with a formatting tool to generate a publishable output that can be delivered in various forms. This is visualised by the following figure.\n\n\n\n\n\n---\nPublishing workflow\n---\n%%{ init : { \"theme\" : \"neutral\", \"flowchart\" : { \"curve\" : \"stepBefore\" }}}%%\nflowchart LR\n  \n    E1(\"(1)\\nExternal resources\"):::external -.-&gt; A1\n    A1{{\"(2)\\nAuthoring tool\"}} --&gt; I1(\"(3)\\nText + Figures +\\nCode + Tables + ...\"):::input\n    I1 --&gt; P1{{\"(4)\\nFormatting tool\"}}\n    P1 --&gt; O1[\"(5)\\nFormatted\\nOutput\"]:::output\n    O1 -.-&gt; D1{{\"(6)\\nDelivery system\"}}:::delivery\n    classDef external fill:#eee,stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;\n    classDef input fill:#ffa;\n    classDef output fill:#faa;\n    classDef delivery stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;\n\n\n\n\n\n\nAn example of a publishing workflow is the following. A research group may carry out an investigation which ends up with (1) data, figures, analyses, and results, those resources are put together with an (2) authoring tool like Overleaf which produces an (3) organised hierarchy of files and text that includes formatting information, then using a (4) formatting tool like pdfLaTeX all the artefacts are combined into a (5) pdf document that can be (6a) printed as a stand-alone document, or (6b) included into the proceedings of a conference.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction/index.html#integrated-development-environments",
+    "href": "introduction/index.html#integrated-development-environments",
+    "title": "Introduction to Quarto",
+    "section": "Integrated Development Environments",
+    "text": "Integrated Development Environments\nThe separation of the source code and the publishable outputs is something that all Integrated Development Environments (IDEs) provide. These are tools for writing computer programs that commonly require a compilation phase which is usually integrated in the same tool. The idea of authoring tools that can create generic input artefacts that are later combined by a formatting tool is very similar to the common process followed in programming compiled programming languages. This has facilitate the adoption of IDEs as authoring tools. Microsoft Visual Studio and Posit Workbench (formerly RStudio) have tools to work with the Quarto environment. Both of them provide options for collaborative and contemporaneous editing.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction/index.html#key-points",
+    "href": "introduction/index.html#key-points",
+    "title": "Introduction to Quarto",
+    "section": "Key points",
+    "text": "Key points\n\nQuarto:\nQuarto supports dynamic content with Python, R, Julia and Observable\nprogramming languages.\nQuarto uses pandoc to convert the input artefacts to its output.\nQuarto supports plain text markdown, Jupyter notebooks and an augmented\nmarkdown,\nIntegration with Posit Connect (former RMarkdown), Atlassian Confluence, Visual Studio,\nBuilt with quarto render\nHas a preview mode quarto preview which autobuilds and updates when changes in the source files are detected.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction/slides-quarto.html#integrated-development-environments",
+    "href": "introduction/slides-quarto.html#integrated-development-environments",
+    "title": "Introduction to Quarto",
+    "section": "Integrated Development Environments",
+    "text": "Integrated Development Environments"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This site contains information about a workshop organised in the University of Bristol to introduce the audience to the Quarto publishing system. This is part of a working group on New Ways of Publishing which periodically meets to discuss new technologies and tools to facilitate the authoring and publishing process."
+    "text": "This site contains information about a workshop organised in the University of Bristol to introduce the audience to the Quarto publishing system. This is part of a working group on New Ways of Publishing which periodically meets to discuss new technologies and tools to facilitate the authoring and publishing process.",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
   },
   {
     "objectID": "about.html#workshop-organisers",
     "href": "about.html#workshop-organisers",
     "title": "About",
     "section": "Workshop organisers",
-    "text": "Workshop organisers\n\n\n\n\n\n\nMiquel Perello Nieto\n\n\n\n\n\n\n\nDaladier Sampaio Neto\n\n\n\n\n\n\n\nRoussel Desmond Nzoyem\n\n\n\n\n\n\n\nPeter Flach"
+    "text": "Workshop organisers\n\n\n\n\n\n\n\n\n\nMiquel Perello Nieto\n\n\n\n\n\n\n\nDaladier Sampaio Neto\n\n\n\n\n\n\n\nRoussel Desmond Nzoyem\n\n\n\n\n\n\n\nPeter Flach",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
   },
   {
     "objectID": "about.html#sidebar-image",
     "href": "about.html#sidebar-image",
     "title": "About",
     "section": "Sidebar image",
-    "text": "Sidebar image\nThe sidebar image was generated by Microsoft Copilot with an prompt similar to the following sentence “An old book in an old library with a computer screen from which a network of ideas emerges with new ways of publishing concepts.”"
+    "text": "Sidebar image\nThe sidebar image was generated by Microsoft Copilot with an prompt similar to the following sentence “An old book in an old library with a computer screen from which a network of ideas emerges with new ways of publishing concepts.”",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
+  },
+  {
+    "objectID": "slides.html#agenda",
+    "href": "slides.html#agenda",
+    "title": "Hands-on",
+    "section": "Agenda",
+    "text": "Agenda\n\nIntroduction to Quarto\nGet Started\nHands-on\n\nListings\nTemplates and Customization\nPrograming"
+  },
+  {
+    "objectID": "slides.html#get-started",
+    "href": "slides.html#get-started",
+    "title": "Hands-on",
+    "section": "Get Started",
+    "text": "Get Started\nDownloading Quarto\n\nDownload Quarto\n\nLinux\nMacOS\nWindows\n\nChoose your platform\n\nVS Code\nJupyter Notebook/Lab\nNeoVim\nRStudio"
+  },
+  {
+    "objectID": "slides.html#listings",
+    "href": "slides.html#listings",
+    "title": "Hands-on",
+    "section": "Listings",
+    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful to create blogs, newletters\nLink to the documentation: https://quarto.org/docs/websites/website-listings.html\nListings example: https://intelligentsystemslaboratory.github.io/personal_page/blog.html"
+  },
+  {
+    "objectID": "slides.html#templates-and-customization",
+    "href": "slides.html#templates-and-customization",
+    "title": "Hands-on",
+    "section": "Templates and Customization",
+    "text": "Templates and Customization\n\nSearch bar\n\nhttps://quarto.org/docs/websites/website-search.html\n\nThemes\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nTools\n\nhttps://quarto.org/docs/websites/website-tools.html"
+  },
+  {
+    "objectID": "slides.html#programing",
+    "href": "slides.html#programing",
+    "title": "Hands-on",
+    "section": "Programing",
+    "text": "Programing\n\nQuarto also provides the option to embed some code on your website\nQuarto supports Python, R, Julia and Observable Javascript\nYou can create a code block delimiting using ```\nExample of code running: https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html"
+  },
+  {
+    "objectID": "slides.html#programing-1",
+    "href": "slides.html#programing-1",
+    "title": "Hands-on",
+    "section": "Programing",
+    "text": "Programing\n\nAlso Quarto allows the creation of short codes.\nShortcodes are special markdown directives that generate various types of content. Quarto shortcodes are similar in form and function to Hugo shortcodes and WordPress shortcodes.\nDocumentation: https://quarto.org/docs/extensions/shortcodes.html"
+  },
+  {
+    "objectID": "hands_on.html",
+    "href": "hands_on.html",
+    "title": "Hands-on",
+    "section": "",
+    "text": "Introduction to Quarto\nGet Started\nHands-on\n\nListings\nTemplates and Customization\nPrograming",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
+  },
+  {
+    "objectID": "hands_on.html#agenda",
+    "href": "hands_on.html#agenda",
+    "title": "Hands-on",
+    "section": "",
+    "text": "Introduction to Quarto\nGet Started\nHands-on\n\nListings\nTemplates and Customization\nPrograming",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
+  },
+  {
+    "objectID": "hands_on.html#get-started",
+    "href": "hands_on.html#get-started",
+    "title": "Hands-on",
+    "section": "Get Started",
+    "text": "Get Started\n\nDownloading Quarto\n\nDownload Quarto\n\nLinux\nMacOS\nWindows\n\nChoose your platform\n\nVS Code\nJupyter Notebook/Lab\nNeoVim\nRStudio\n\n\n\n\n\n\nDownload Quarto\n\nDownload Quarto: https://quarto.org/docs/get-started/\nWorkshop website: https://intelligentsystemslaboratory.github.io/quarto_workshop/\n\n\nSetup\n\nTerminal + Text Editor (VS Code)\nVisual Code has options to use quarto in a better user interface\n\n\n\nRun the command ‘quarto create project website ’\nAlternatively, ctrl+shift+p and create the quarto project\nAutomatically Quarto will create the following directory structure:\n\n_quarto.yml\nindex.qmd\nabout.qmd\nstyles.css\n\n\n\n\nStructure\n\n.yml files\n\nYAML is a human-readable data serialization language\nYAML is an official strict superset of JSON despite looking very different from JSON.\nTo create a YAML file, use either the .yaml or .yml file extension.\n\n.qmd files\n\nWork as markdown files, but they have a configuration section in yml on the top of the file\n\n\n\n\n_quarto.yml\n\nDefines the basic structure of the website.\nAll configurations are done using yml\nSome of the configurations:\n\nNavigation bar\nSide bar\nContents",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
+  },
+  {
+    "objectID": "hands_on.html#listings",
+    "href": "hands_on.html#listings",
+    "title": "Hands-on",
+    "section": "Listings",
+    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful to create blogs, newletters\nLink to the documentation: https://quarto.org/docs/websites/website-listings.html\nListings example: https://intelligentsystemslaboratory.github.io/personal_page/blog.html",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
+  },
+  {
+    "objectID": "hands_on.html#templates-and-customization",
+    "href": "hands_on.html#templates-and-customization",
+    "title": "Hands-on",
+    "section": "Templates and Customization",
+    "text": "Templates and Customization\n\nSearch bar\n\nhttps://quarto.org/docs/websites/website-search.html\n\nThemes\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nTools\n\nhttps://quarto.org/docs/websites/website-tools.html",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
+  },
+  {
+    "objectID": "hands_on.html#programing",
+    "href": "hands_on.html#programing",
+    "title": "Hands-on",
+    "section": "Programing",
+    "text": "Programing\n\nQuarto also provides the option to embed some code on your website\nQuarto supports Python, R, Julia and Observable Javascript\nYou can create a code block delimiting using ```\nExample of code running: https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
+  },
+  {
+    "objectID": "hands_on.html#programing-1",
+    "href": "hands_on.html#programing-1",
+    "title": "Hands-on",
+    "section": "Programing",
+    "text": "Programing\n\nAlso Quarto allows the creation of short codes.\nShortcodes are special markdown directives that generate various types of content. Quarto shortcodes are similar in form and function to Hugo shortcodes and WordPress shortcodes.\nDocumentation: https://quarto.org/docs/extensions/shortcodes.html",
+    "crumbs": [
+      "Home",
+      "Hands-on"
+    ]
   }
 ]
