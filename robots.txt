@@ -1,1 +1,1 @@
-Sitemap: https://IntelligentSystemsLaboratory.github.io/quarto_workshop/sitemap.xml
+Sitemap: https://intelligentsystemslaboratory.github.io/quarto_workshop/sitemap.xml
