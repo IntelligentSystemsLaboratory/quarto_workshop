@@ -1,5 +1,5 @@
 ---
-title: "Quarto Hands-on"
+title: "Hands-on"
 author: "Daladier Sampaio"
 format:
     html: default
@@ -19,7 +19,7 @@ jupyter: python3
 - Hands-on
     - Listings
     - Templates and Customization
-    - Code
+    - Programing
 
 
 ## Get Started
@@ -49,11 +49,15 @@ Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_worksho
 
 ## Get Started
 
-- Terminal + VS Code
+- Terminal + Text Editor (VS Code)
+
+- Visual Code has options to use quarto in a better user interface
 
 ## Get Started
 
 - Run the command 'quarto create project website <mysite>'
+
+- Alternatively, ctrl+shift+p and create the quarto project
 
 - Automatically Quarto will create the following directory structure:
     - _quarto.yml
@@ -81,7 +85,7 @@ Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_worksho
         - Side bar
         - Contents 
 
-## Listings
+## Listings {.smaller}
 
 - Listings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data
 
@@ -99,3 +103,21 @@ Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_worksho
     - [https://quarto.org/docs/output-formats/html-themes.html](https://quarto.org/docs/output-formats/html-themes.html)
 - Tools
     - [https://quarto.org/docs/websites/website-tools.html](https://quarto.org/docs/websites/website-tools.html)
+
+## Programing
+
+- Quarto also provides the option to embed some code on your website
+
+- Quarto supports Python, R, Julia and Observable Javascript
+
+- You can create a code block delimiting using ```
+
+- Example of code running: [https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html](https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html)
+
+## Programing
+
+- Also Quarto allows the creation of short codes.
+
+- Shortcodes are special markdown directives that generate various types of content. Quarto shortcodes are similar in form and function to Hugo shortcodes and WordPress shortcodes.
+
+- Documentation: [https://quarto.org/docs/extensions/shortcodes.html](https://quarto.org/docs/extensions/shortcodes.html)
