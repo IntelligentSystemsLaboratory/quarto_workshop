@@ -19,6 +19,7 @@ website:
         url: https://github.com/IntelligentSystemsLaboratory
       - href: index.qmd
         text: Home
+      - introduction.qmd
       - about.qmd
 
 
