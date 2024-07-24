@@ -3,6 +3,10 @@ project:
 
 website:
   title: "Quarto Workshop"
+  site-url: https://intelligentsystemslaboratory.github.io/quarto_workshop/
+  repo-url: https://github.com/IntelligentSystemsLaboratory/quarto_workshop
+  repo-branch: main
+  repo-actions: [edit, issue]
   navbar:
     left:
       - href: index.qmd
