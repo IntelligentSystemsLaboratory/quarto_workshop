@@ -24,6 +24,8 @@ jupyter: python3
 
 ## Get Started
 
+### Downloading Quarto
+
 - Download Quarto
     - Linux
     - MacOS
@@ -35,11 +37,11 @@ jupyter: python3
     - NeoVim
     - RStudio
 
-## Get Started
+---
 
 ![](images/geting_started.png){.absolute top=75}
 
-## Get Started
+---
 
 - Download Quarto
 
@@ -47,13 +49,13 @@ Download Quarto: [https://quarto.org/docs/get-started/](https://quarto.org/docs/
 
 Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_workshop/](https://intelligentsystemslaboratory.github.io/quarto_workshop/)
 
-## Get Started
+### Setup
 
 - Terminal + Text Editor (VS Code)
 
 - Visual Code has options to use quarto in a better user interface
 
-## Get Started
+---
 
 - Run the command 'quarto create project website <mysite>'
 
@@ -65,7 +67,7 @@ Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_worksho
     - about.qmd
     - styles.css
 
-## Get Started
+### Structure
 
 - .yml files
     - YAML is a human-readable data serialization language
@@ -75,7 +77,7 @@ Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_worksho
 - .qmd files
     - Work as markdown files, but they have a configuration section in yml on the top of the file
 
-## Get Started
+---
 
 - _quarto.yml
     - Defines the basic structure of the website.
