@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Introduction to Quarto
 subtitle: <a href="slides-quarto.html" target="_blank"></a>
 author: 
   - name:
@@ -15,15 +15,19 @@ author:
     attributes:
         equal-contributor: False
 format:
-  html: default
+  html:
+    mermaid:
+      theme: dark
   revealjs:
     output-file: slides-quarto.html
     width: 960
     height: 700
-    css: assets/introduction/style.css
+    css: assets/style.css
+    mermaid:
+      theme: dark
 ---
 
-# Gentle reminder of the publishing workflow
+# Publishing workflow
 
 ::: {.content-hidden when-format="revealjs"}
 The **publishing workflow** is the process in which external resources are
@@ -86,17 +90,19 @@ flowchart LR
     A1{{"Authoring tool"}} --> I1("Text + Figures +\nCode + Tables + ..."):::input
     subgraph "Quarto, pdflatex, xelatex, pandoc, ..." 
       direction LR
-      I1 --> P1{{"Formatting tool"}}
+      I1 --> P1{{"Quarto\nFormatting tool"}}:::quarto
       P1 --> O1["Formatted\nOutput"]:::output
     end
     classDef external fill:#eee;
     classDef input fill:#ffa;
     classDef output fill:#faa;
+    classDef quarto fill:#75aadb,color:#000;
 ```
 
 
-# Quarto as a Single-In-Multi-Out
+# Quarto supports Single-In-Multi-Out
 
+::: {.content-hidden when-format="revealjs"}
 The creation of research or academic material usually involves the production
 of slides, documents, posters and other output formats from the same material.
 There are different paradigms to create publishing material: 
@@ -119,7 +125,6 @@ Slides, LaTeX, etc.
   formats by composing input artefacts from different locations.
 
 
-::: {.content-hidden when-format="revealjs"}
 More recent publishing systems allow the generation of multiple types of
 publication formats from a joint set of input artefacts. We refer to this
 paradigm as Single-In-Multi-Out (SIMO). This paradigm offers various
@@ -134,7 +139,7 @@ transparency; and
 %%{ init : { "theme" : "neutral", "flowchart" : { "curve" : "stepBefore" }}}%%
 
 flowchart LR
-    I1("(3)\nText + Figures + \n Code + ..."):::input --- dummy2{{"(4) Quarto\nFormatting tool"}}
+    I1("(3)\nText + Figures + \n Code + ..."):::input --- dummy2{{"(4) Quarto\nFormatting tool"}}:::quarto
     dummy2 --> O1["(5a) Published \n Paper \n (PDF)"]
     dummy2 --> O2["(5b) Presentation \n Slides \n (PPTX/PDF)"]
     dummy2 --> O3["(5c) Poster \n (PPTX/PDF)"]
@@ -144,6 +149,7 @@ flowchart LR
     style O2 fill:#bff
     style O3 fill:#f99
     style O4 fill:#bfb
+    classDef quarto fill:#75aadb,color:#000;
 ```
 
 ::: {.content-hidden when-format="revealjs"}
@@ -155,8 +161,11 @@ and other publishing tools is provided with more detail in the next section
 [](sec:formatting-tools).
 :::
 
-# Installation and usage
+# Available for multiple OS
 
+![](assets/images/get_started_step1.jpg)
+
+::: {.content-hidden when-format="revealjs"}
 - Get started documentation: [quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
 - Open-source repository in GitHub: [Quarto-cli](https://github.com/quarto-dev/quarto-cli)
 - Create a project with `quarto create project`
@@ -164,8 +173,34 @@ and other publishing tools is provided with more detail in the next section
 - Build project with `quarto render`
 - Preview with `quarto preview` (it autobuilds and updates when changes in the
   source files are detected).
+:::
 
-# Authoring for Quarto
+# Using quarto {.smaller}
+
+```shell
+$ quarto --help
+
+  render     [input] [args...]     - Render files or projects to various document types.
+  preview    [file] [args...]      - Render and preview a document or website project.  
+  serve      [input]               - Serve a Shiny interactive document.                
+  create     [type] [commands...]  - Create a Quarto project or extension               
+  use        <type> [target]       - Automate document or project setup tasks.          
+  add        <extension>           - Add an extension to this folder or project         
+  update     [target...]           - Updates an extension or global dependency.         
+  remove     [target...]           - Removes an extension.                              
+  convert    <input>               - Convert documents to alternate representations.    
+  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  
+  typst      [args...]             - Run the version of Typst embedded within Quarto.   
+  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        
+  install    [target...]           - Installs a global dependency (TinyTex or Chromium).
+  uninstall  [tool]                - Removes an extension.                              
+  tools                            - Display the status of Quarto installed dependencies
+  publish    [provider] [path]     - Publish a document or project to a provider.       
+  check      [target]              - Verify correct functioning of Quarto installation. 
+  help       [command]             - Show this help or the help of a sub-command.
+```
+
+# Authoring tools
 
 ::: {.content-hidden when-format="revealjs"}
 **Authoring tools** facilitate the creation of input artefacts (e.g. plain
@@ -193,11 +228,12 @@ flowchart LR
       direction LR
       A1{{"Authoring tool"}} --> I1("Text + Code +\nTables + ..."):::input
     end
-    I1 --> P1{{"Formatting tool"}}
+    I1 --> P1{{"Quarto\nFormatting tool"}}:::quarto
     P1 --> O1["Formatted\nOutput"]:::output
     classDef external fill:#eee;
     classDef input fill:#ffa;
     classDef output fill:#faa;
+    classDef quarto fill:#75aadb,color:#000;
 ```
 
 ::: {.content-hidden when-format="revealjs"}
@@ -208,7 +244,7 @@ text editors like vim, NeoVim, Notepad, and general-purpose Integrated
 Development Environments (IDEs).
 :::
 
-# Authoring with formatting
+# Authoring with formatting (IDE + Quarto)
 
 ::: {.content-hidden when-format="revealjs"}
 There are **authoring tools** that incorporate a **formatting tool**.  While in
@@ -224,15 +260,16 @@ _pdfLatex_ in the back-end.
 flowchart LR
   
     E1("External resources"):::external -.-> A1
-    subgraph "IDE + Quarto, HackMD, Notion, Typst, Overleaf..." 
+    subgraph "IDE + Quarto" 
       direction LR
-      A1{{"Authoring tool"}} --> I1("Text + Figures +\nCode + Tables + ..."):::input
-      I1 --> P1{{"Formatting tool"}}
+      A1{{"IDE\nAuthoring tool"}} --> I1("Text + Figures +\nCode + Tables + ..."):::input
+      I1 --> P1{{"Quarto\nFormatting tool"}}:::quarto
       P1 --> O1["Formatted\nOutput"]:::output
     end
     classDef external fill:#eee;
     classDef input fill:#ffa;
     classDef output fill:#faa;
+    classDef quarto fill:#75aadb,color:#000;
 ```
 
 ## Integrated Development Environments
@@ -251,6 +288,8 @@ Workbench](https://posit.co/products/enterprise/workbench/) (formerly
 the `Quarto` environment. Both of them provide options for collaborative and 
 contemporaneous editing.
 :::
+
+![](assets/images/get_started_step2.jpg)
 
 # Then, what is Quarto?
 
