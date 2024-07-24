@@ -61,17 +61,13 @@ flowchart LR
     classDef delivery stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;
 ```
 
-::: {.content-hidden when-format="revealjs"}
-An example of a publishing workflow is the following. A research group may
-carry out an investigation which ends up with **(1)** data, figures, analyses,
-and results, those resources are put together with an **(2)** authoring tool
-like Overleaf which produces an **(3)** organised hierarchy of files and text
-that includes formatting information, then using a **(4)** formatting tool like
-pdfLaTeX all the artefacts are combined into a **(5)** pdf document that can be
-**(6a)** printed as a stand-alone document, or **(6b)** included into the
-proceedings of a conference. 
-
-:::
+An example of the creation of a personal website. You collect **(1)** material to
+publish in your website data, figures, analyses, and results, those
+resources are put together with **(2)** an Integrated Development Environment
+like Visual Studio creating **(3)** an organised hierarchy of files and text
+that includes formatting information, then using **(4)** a formatting tool like
+Jekyll all the artefacts are combined into **(5)** a website of html and other
+files that can be **(6)** hosted in a web server. 
 
 # Quarto is a formatting tool
 
