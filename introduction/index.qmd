@@ -29,6 +29,12 @@ format:
 
 # Publishing workflow
 
+:::: {.content-hidden when-format="revealjs"}
+:::{note}
+
+:::
+::::
+
 ::: {.content-hidden when-format="revealjs"}
 The **publishing workflow** is the process in which external resources are
 prepared and collated together with the help of an **authoring tool** and
@@ -165,16 +171,6 @@ and other publishing tools is provided with more detail in the next section
 
 ![](assets/images/get_started_step1.jpg)
 
-::: {.content-hidden when-format="revealjs"}
-- Get started documentation: [quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
-- Open-source repository in GitHub: [Quarto-cli](https://github.com/quarto-dev/quarto-cli)
-- Create a project with `quarto create project`
-    - Type: default, website, blog, manuscript, book, confluence
-- Build project with `quarto render`
-- Preview with `quarto preview` (it autobuilds and updates when changes in the
-  source files are detected).
-:::
-
 # Using quarto {.smaller}
 
 ```shell
@@ -199,6 +195,17 @@ $ quarto --help
   check      [target]              - Verify correct functioning of Quarto installation. 
   help       [command]             - Show this help or the help of a sub-command.
 ```
+
+## Getting started
+
+- Get started documentation: [quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+- Open-source repository in GitHub: [Quarto-cli](https://github.com/quarto-dev/quarto-cli)
+- Create a project with `quarto create project`
+    - Type: default, website, blog, manuscript, book, confluence
+- Build project with `quarto render`
+- Preview with `quarto preview` (it autobuilds and updates when changes in the
+  source files are detected).
+
 
 # Authoring tools
 
@@ -289,6 +296,10 @@ the `Quarto` environment. Both of them provide options for collaborative and
 contemporaneous editing.
 :::
 
+::: {.content-visible when-format="revealjs"}
+`Quarto` is integrated in multiple IDEs
+:::
+
 ![](assets/images/get_started_step2.jpg)
 
 # Then, what is Quarto?
@@ -308,17 +319,13 @@ like Microsoft Visual Studio, Jupyter Lab,
 [Rstudio](https://posit.co/download/rstudio-desktop/), and [Atlassian
 Confluence](https://www.atlassian.com/software/confluence) among others. 
 
-## Key points
+## Key points about Quarto {.smaller}
 :::
 
-- [Quarto](https://quarto.org): 
-- `Quarto` supports dynamic content with Python, R, Julia and Observable
-- programming languages.
-- `Quarto` uses pandoc to convert the input artefacts to its output.
-- `Quarto` supports plain text markdown, Jupyter notebooks and an augmented
-- markdown, 
-- Integration with Posit Connect (former RMarkdown), Atlassian Confluence, Visual
-  Studio, 
-- Built with `quarto render`
-- Has a preview mode `quarto preview` which autobuilds and updates when
-  changes in the source files are detected.
+- `Quarto` is a formatting tool
+- uses pandoc to convert the input artefacts to various outputs.
+- supports plain text markdown, Jupyter notebooks and an augmented markdown, 
+- supports dynamic content with Python, R, Julia and Observable
+  programming languages.
+- is integrated in multiple IDEs: Visual Studio, Posit Connect (former
+  RMarkdown), Atlassian Confluence, ...
