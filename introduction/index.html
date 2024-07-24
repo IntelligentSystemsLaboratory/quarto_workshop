@@ -182,7 +182,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#quarto-is-a-formatting-tool" id="toc-quarto-is-a-formatting-tool" class="nav-link" data-scroll-target="#quarto-is-a-formatting-tool">Quarto is a formatting tool</a></li>
   <li><a href="#quarto-supports-single-in-multi-out" id="toc-quarto-supports-single-in-multi-out" class="nav-link" data-scroll-target="#quarto-supports-single-in-multi-out">Quarto supports Single-In-Multi-Out</a></li>
   <li><a href="#available-for-multiple-os" id="toc-available-for-multiple-os" class="nav-link" data-scroll-target="#available-for-multiple-os">Available for multiple OS</a></li>
-  <li><a href="#using-quarto" id="toc-using-quarto" class="nav-link" data-scroll-target="#using-quarto">Using quarto</a></li>
+  <li><a href="#using-quarto" id="toc-using-quarto" class="nav-link" data-scroll-target="#using-quarto">Using quarto</a>
+  <ul class="collapse">
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting started</a></li>
+  </ul></li>
   <li><a href="#authoring-tools" id="toc-authoring-tools" class="nav-link" data-scroll-target="#authoring-tools">Authoring tools</a></li>
   <li><a href="#authoring-with-formatting-ide-quarto" id="toc-authoring-with-formatting-ide-quarto" class="nav-link" data-scroll-target="#authoring-with-formatting-ide-quarto">Authoring with formatting (IDE + Quarto)</a>
   <ul class="collapse">
@@ -190,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#then-what-is-quarto" id="toc-then-what-is-quarto" class="nav-link" data-scroll-target="#then-what-is-quarto">Then, what is Quarto?</a>
   <ul class="collapse">
-  <li><a href="#key-points" id="toc-key-points" class="nav-link" data-scroll-target="#key-points">Key points</a></li>
+  <li><a href="#key-points-about-quarto" id="toc-key-points-about-quarto" class="nav-link" data-scroll-target="#key-points-about-quarto">Key points about Quarto</a></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="slides-quarto.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
@@ -233,6 +236,9 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="publishing-workflow" class="level1">
 <h1>Publishing workflow</h1>
+<div class="{note}">
+
+</div>
 <p>The <strong>publishing workflow</strong> is the process in which external resources are prepared and collated together with the help of an <strong>authoring tool</strong> and subsequently rendered with a <strong>formatting tool</strong> to generate a publishable output that can be delivered in various forms. This is visualised by the following figure.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -334,16 +340,6 @@ flowchart LR
 <section id="available-for-multiple-os" class="level1">
 <h1>Available for multiple OS</h1>
 <p><img src="assets/images/get_started_step1.jpg" class="img-fluid"></p>
-<ul>
-<li>Get started documentation: <a href="https://quarto.org/docs/get-started/">quarto.org/docs/get-started/</a></li>
-<li>Open-source repository in GitHub: <a href="https://github.com/quarto-dev/quarto-cli">Quarto-cli</a></li>
-<li>Create a project with <code>quarto create project</code>
-<ul>
-<li>Type: default, website, blog, manuscript, book, confluence</li>
-</ul></li>
-<li>Build project with <code>quarto render</code></li>
-<li>Preview with <code>quarto preview</code> (it autobuilds and updates when changes in the source files are detected).</li>
-</ul>
 </section>
 <section id="using-quarto" class="level1 smaller">
 <h1 class="smaller">Using quarto</h1>
@@ -367,6 +363,19 @@ flowchart LR
   publish    [provider] [path]     - Publish a document or project to a provider.       
   check      [target]              - Verify correct functioning of Quarto installation. 
   help       [command]             - Show this help or the help of a sub-command.</code></pre>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting started</h2>
+<ul>
+<li>Get started documentation: <a href="https://quarto.org/docs/get-started/">quarto.org/docs/get-started/</a></li>
+<li>Open-source repository in GitHub: <a href="https://github.com/quarto-dev/quarto-cli">Quarto-cli</a></li>
+<li>Create a project with <code>quarto create project</code>
+<ul>
+<li>Type: default, website, blog, manuscript, book, confluence</li>
+</ul></li>
+<li>Build project with <code>quarto render</code></li>
+<li>Preview with <code>quarto preview</code> (it autobuilds and updates when changes in the source files are detected).</li>
+</ul>
+</section>
 </section>
 <section id="authoring-tools" class="level1">
 <h1>Authoring tools</h1>
@@ -435,18 +444,14 @@ flowchart LR
 <section id="then-what-is-quarto" class="level1">
 <h1>Then, what is Quarto?</h1>
 <p><a href="https://quarto.org">Quarto</a> is an open-source publishing system with the objective of facilitating the creation of scientific content. Quarto is sponsored by <a href="https://posit.co">Posit</a>, and follows the development of the R Markdown publishing system extending the focus from the programming language R to Python, Julia and Observable. It supports Jupyter notebooks, markdown and their own extension <code>Quarto</code> markdown. The conversion to different output formats is done with <a href="https://pandoc.org/">pandoc</a>, which is able to produce presentations (Reveal.js), dashboards, websites, blogs, books, PDFs, Microsoft Word, ePub and more. Quarto is integrated into multiple authoring environments like Microsoft Visual Studio, Jupyter Lab, <a href="https://posit.co/download/rstudio-desktop/">Rstudio</a>, and <a href="https://www.atlassian.com/software/confluence">Atlassian Confluence</a> among others.</p>
-<section id="key-points" class="level2">
-<h2 class="anchored" data-anchor-id="key-points">Key points</h2>
+<section id="key-points-about-quarto" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="key-points-about-quarto">Key points about Quarto</h2>
 <ul>
-<li><a href="https://quarto.org">Quarto</a>:</li>
-<li><code>Quarto</code> supports dynamic content with Python, R, Julia and Observable</li>
-<li>programming languages.</li>
-<li><code>Quarto</code> uses pandoc to convert the input artefacts to its output.</li>
-<li><code>Quarto</code> supports plain text markdown, Jupyter notebooks and an augmented</li>
-<li>markdown,</li>
-<li>Integration with Posit Connect (former RMarkdown), Atlassian Confluence, Visual Studio,</li>
-<li>Built with <code>quarto render</code></li>
-<li>Has a preview mode <code>quarto preview</code> which autobuilds and updates when changes in the source files are detected.</li>
+<li><code>Quarto</code> is a formatting tool</li>
+<li>uses pandoc to convert the input artefacts to various outputs.</li>
+<li>supports plain text markdown, Jupyter notebooks and an augmented markdown,</li>
+<li>supports dynamic content with Python, R, Julia and Observable programming languages.</li>
+<li>is integrated in multiple IDEs: Visual Studio, Posit Connect (former RMarkdown), Atlassian Confluence, …</li>
 </ul>
 
 

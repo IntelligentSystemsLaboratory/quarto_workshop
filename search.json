@@ -10,46 +10,6 @@
     ]
   },
   {
-    "objectID": "introduction/index.html",
-    "href": "introduction/index.html",
-    "title": "Introduction to Quarto",
-    "section": "",
-    "text": "The publishing workflow is the process in which external resources are prepared and collated together with the help of an authoring tool and subsequently rendered with a formatting tool to generate a publishable output that can be delivered in various forms. This is visualised by the following figure.\n\n\n\n\n\n---\nPublishing workflow\n---\n%%{ init : { \"theme\" : \"neutral\", \"flowchart\" : { \"curve\" : \"stepBefore\" }}}%%\nflowchart LR\n  \n    E1(\"(1)\\nExternal resources\"):::external -.-&gt; A1\n    A1{{\"(2)\\nAuthoring tool\"}} --&gt; I1(\"(3)\\nText + Figures +\\nCode + Tables + ...\"):::input\n    I1 --&gt; P1{{\"(4)\\nFormatting tool\"}}\n    P1 --&gt; O1[\"(5)\\nFormatted\\nOutput\"]:::output\n    O1 -.-&gt; D1{{\"(6)\\nDelivery system\"}}:::delivery\n    classDef external fill:#eee,stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;\n    classDef input fill:#ffa;\n    classDef output fill:#faa;\n    classDef delivery stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;\n\n\n\n\n\n\nAn example of a publishing workflow is the following. A research group may carry out an investigation which ends up with (1) data, figures, analyses, and results, those resources are put together with an (2) authoring tool like Overleaf which produces an (3) organised hierarchy of files and text that includes formatting information, then using a (4) formatting tool like pdfLaTeX all the artefacts are combined into a (5) pdf document that can be (6a) printed as a stand-alone document, or (6b) included into the proceedings of a conference.",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "introduction/index.html#integrated-development-environments",
-    "href": "introduction/index.html#integrated-development-environments",
-    "title": "Introduction to Quarto",
-    "section": "Integrated Development Environments",
-    "text": "Integrated Development Environments\nThe separation of the source code and the publishable outputs is something that all Integrated Development Environments (IDEs) provide. These are tools for writing computer programs that commonly require a compilation phase which is usually integrated in the same tool. The idea of authoring tools that can create generic input artefacts that are later combined by a formatting tool is very similar to the common process followed in programming compiled programming languages. This has facilitate the adoption of IDEs as authoring tools. Microsoft Visual Studio and Posit Workbench (formerly RStudio) have tools to work with the Quarto environment. Both of them provide options for collaborative and contemporaneous editing.",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "introduction/index.html#key-points",
-    "href": "introduction/index.html#key-points",
-    "title": "Introduction to Quarto",
-    "section": "Key points",
-    "text": "Key points\n\nQuarto:\nQuarto supports dynamic content with Python, R, Julia and Observable\nprogramming languages.\nQuarto uses pandoc to convert the input artefacts to its output.\nQuarto supports plain text markdown, Jupyter notebooks and an augmented\nmarkdown,\nIntegration with Posit Connect (former RMarkdown), Atlassian Confluence, Visual Studio,\nBuilt with quarto render\nHas a preview mode quarto preview which autobuilds and updates when changes in the source files are detected.",
-    "crumbs": [
-      "Home",
-      "Introduction"
-    ]
-  },
-  {
-    "objectID": "introduction/slides-quarto.html#integrated-development-environments",
-    "href": "introduction/slides-quarto.html#integrated-development-environments",
-    "title": "Introduction to Quarto",
-    "section": "Integrated Development Environments",
-    "text": "Integrated Development Environments"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -199,6 +159,64 @@
     "crumbs": [
       "Home",
       "Hands-on"
+    ]
+  },
+  {
+    "objectID": "introduction/slides-quarto.html#getting-started",
+    "href": "introduction/slides-quarto.html#getting-started",
+    "title": "Introduction to Quarto",
+    "section": "Getting started",
+    "text": "Getting started\n\nGet started documentation: quarto.org/docs/get-started/\nOpen-source repository in GitHub: Quarto-cli\nCreate a project with quarto create project\n\nType: default, website, blog, manuscript, book, confluence\n\nBuild project with quarto render\nPreview with quarto preview (it autobuilds and updates when changes in the source files are detected)."
+  },
+  {
+    "objectID": "introduction/slides-quarto.html#integrated-development-environments",
+    "href": "introduction/slides-quarto.html#integrated-development-environments",
+    "title": "Introduction to Quarto",
+    "section": "Integrated Development Environments",
+    "text": "Integrated Development Environments\nQuarto is integrated in multiple IDEs"
+  },
+  {
+    "objectID": "introduction/index.html",
+    "href": "introduction/index.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "The publishing workflow is the process in which external resources are prepared and collated together with the help of an authoring tool and subsequently rendered with a formatting tool to generate a publishable output that can be delivered in various forms. This is visualised by the following figure.\n\n\n\n\n\n---\nPublishing workflow\n---\n%%{ init : { \"theme\" : \"neutral\", \"flowchart\" : { \"curve\" : \"stepBefore\" }}}%%\nflowchart LR\n  \n    E1(\"(1)\\nExternal resources\"):::external -.-&gt; A1\n    A1{{\"(2)\\nAuthoring tool\"}} --&gt; I1(\"(3)\\nText + Figures +\\nCode + Tables + ...\"):::input\n    I1 --&gt; P1{{\"(4)\\nFormatting tool\"}}\n    P1 --&gt; O1[\"(5)\\nFormatted\\nOutput\"]:::output\n    O1 -.-&gt; D1{{\"(6)\\nDelivery system\"}}:::delivery\n    classDef external fill:#eee,stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;\n    classDef input fill:#ffa;\n    classDef output fill:#faa;\n    classDef delivery stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;\n\n\n\n\n\n\nAn example of a publishing workflow is the following. A research group may carry out an investigation which ends up with (1) data, figures, analyses, and results, those resources are put together with an (2) authoring tool like Overleaf which produces an (3) organised hierarchy of files and text that includes formatting information, then using a (4) formatting tool like pdfLaTeX all the artefacts are combined into a (5) pdf document that can be (6a) printed as a stand-alone document, or (6b) included into the proceedings of a conference.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction/index.html#getting-started",
+    "href": "introduction/index.html#getting-started",
+    "title": "Introduction to Quarto",
+    "section": "Getting started",
+    "text": "Getting started\n\nGet started documentation: quarto.org/docs/get-started/\nOpen-source repository in GitHub: Quarto-cli\nCreate a project with quarto create project\n\nType: default, website, blog, manuscript, book, confluence\n\nBuild project with quarto render\nPreview with quarto preview (it autobuilds and updates when changes in the source files are detected).",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction/index.html#integrated-development-environments",
+    "href": "introduction/index.html#integrated-development-environments",
+    "title": "Introduction to Quarto",
+    "section": "Integrated Development Environments",
+    "text": "Integrated Development Environments\nThe separation of the source code and the publishable outputs is something that all Integrated Development Environments (IDEs) provide. These are tools for writing computer programs that commonly require a compilation phase which is usually integrated in the same tool. The idea of authoring tools that can create generic input artefacts that are later combined by a formatting tool is very similar to the common process followed in programming compiled programming languages. This has facilitate the adoption of IDEs as authoring tools. Microsoft Visual Studio and Posit Workbench (formerly RStudio) have tools to work with the Quarto environment. Both of them provide options for collaborative and contemporaneous editing.",
+    "crumbs": [
+      "Home",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "introduction/index.html#key-points-about-quarto",
+    "href": "introduction/index.html#key-points-about-quarto",
+    "title": "Introduction to Quarto",
+    "section": "Key points about Quarto",
+    "text": "Key points about Quarto\n\nQuarto is a formatting tool\nuses pandoc to convert the input artefacts to various outputs.\nsupports plain text markdown, Jupyter notebooks and an augmented markdown,\nsupports dynamic content with Python, R, Julia and Observable programming languages.\nis integrated in multiple IDEs: Visual Studio, Posit Connect (former RMarkdown), Atlassian Confluence, …",
+    "crumbs": [
+      "Home",
+      "Introduction"
     ]
   }
 ]
