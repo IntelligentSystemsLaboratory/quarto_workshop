@@ -114,7 +114,7 @@ Workshop website: [https://intelligentsystemslaboratory.github.io/quarto_worksho
 
 - You can create a code block delimiting using ```
 
-- Example of code running: [https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html](https://tailor-uob.github.io/mooc_trustworthy_ai/cha_odm/odm.html)
+- Example of code running: [https://tailor-uob.github.io/training-material/cha_odm/odm.html](https://tailor-uob.github.io/training-material/cha_odm/odm.html)
 
 ## Programing
 
