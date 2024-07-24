@@ -43,9 +43,9 @@ Join us for this hands-on introductory tutorial to the Quarto publishing system.
 
 ### Agenda
 
-- Introduction to Quarto
-- Get Started 
+- 2:15 Introduction to Quarto
+- 2:25 Get Started 
 - Hands-on
-    - Listings
-    - Templates and Customization
-    - Programing
+    - 3:00 Listings
+    - 3:30 Templates and Customization
+    - 4:00 Programing
